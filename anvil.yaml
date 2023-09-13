@@ -15,6 +15,9 @@ services:
     use_email: true, allow_remember_me: true, allow_signup: false, enable_automatically: true,
     confirm_email: true, require_mfa: true, remember_me_days: 30}
   server_config: {user_table: users}
+- source: /runtime/services/google.yml
+  client_config: {}
+  server_config: {}
 startup: {type: form, module: Lists}
 package_name: Change_Notes
 allow_embedding: false
